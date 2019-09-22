@@ -18,3 +18,7 @@ class Solution:
 #then repeat twice for max and min 
 #if not nums returns 0 
 #if number also 1 then return 0. this allows you to work with num of 0
+#subarray is 2,3 
+#2,3,-2
+#3,2,4
+#2,4 as you can see 6 is the highest. so we have to finf our max global which is our largest product of subarray
