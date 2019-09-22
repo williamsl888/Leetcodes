@@ -1,0 +1,20 @@
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        final_output=[0]*len(nums)
+        for i in range(len(nums)):
+            mul=1
+            for j in range(len(nums)):
+                if(i==j):
+                    print('dont multiply')
+                else:
+                    mul=mul*nums[j]
+            final_output[i]=mul    
+        
+        return final_output
+    #my own answer 
+    
+    #multiplation is 1. i in range is 0 because of starting. 
+    #i = 0 then mul = 1 
+    #i working on outer loop and j is working on inner loop 
+    #except nums[1] we dont need to multiply 
+    #else if at position 1 we will multiply 2,3,4 giving us 24. then setting it up as final output = [i]=mul will give us the right positioning
