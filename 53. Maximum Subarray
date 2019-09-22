@@ -31,3 +31,12 @@ class Solution:
         
     def maxSubArray(self, nums: 'List[int]') -> 'int':
         return self.helper(nums, 0, len(nums) - 1)
+#p is middle value. 
+#+1 is from 4 to 2 
+#when you want a negative value you declare it to infinity 
+#curr_sum 0 is to find the max sum 
+#+= nums[i] = x + = 1 
+#x=x+1 
+#def maxSubArray(self, nums: 'List[int]') -> 'int': gives you the cross sum which is 6. list[int] is the original list
+#helper breaks down the list into right and left and cross. While cross_sum function will go back up 
+#return self.helper(nums, 0, len(nums) - 1) works on 0-8. always put -1. 
